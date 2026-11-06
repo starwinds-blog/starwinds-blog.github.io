@@ -1,0 +1,32 @@
+baseURL = "https://starwinds-blog.github.io/"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+title = "My Story & Tech Blog"
+hasCJKLanguage = true
+enableRobotsTXT = true
+summaryLength = 70
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/posts/:slugorcontentbasename/"
+
+[params]
+  env = "production"
+  description = "자유 형식 메모와 경험을 다듬어 기록하는 로컬 우선 블로그"
+  author = "Blog Author"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    style = "monokai"
