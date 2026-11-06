@@ -10,7 +10,7 @@ summaryLength = 70
   pagerSize = 10
 
 [permalinks]
-  posts = "/posts/:slugorcontentbasename/"
+  posts = "/posts/:slug/"
 
 [params]
   env = "production"
