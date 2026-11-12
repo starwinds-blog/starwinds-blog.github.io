@@ -42,7 +42,9 @@
     <header>
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       <span class="meta">{{ .Site.Params.description }}</span>
-    </header>
+    <!-- books-navigation -->
+<nav aria-label="블로그 메뉴"><a href="{{ "books/" | relURL }}">Books</a></nav>
+</header>
     <main>
       {{ block "main" . }}{{ end }}
     </main>
